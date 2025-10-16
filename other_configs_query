@@ -1,0 +1,7 @@
+CREATE TABLE edp_edproddb_srv01.edp_meta.other_configs (
+  CONFIG_ID INT,
+  CONFIG_KEY VARCHAR(500),
+  CONFIG_VALUE VARCHAR(2147483647),
+  IS_ACTIVE VARCHAR(1),
+  DESC VARCHAR(200))
+USING sqlserver
