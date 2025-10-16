@@ -1,0 +1,30 @@
+DQ_NAME,DQ_DESCRIPTION,ERROR_CODE,ACCURACY_FLAG,COMPLETENESS_FLAG,CONFORMITY_FLAG,CONSISTENCY_FLAG,INTEGRITY_FLAG,TIMELINESS_FLAG,UNIQUENESS_FLAG
+DQ_IS_BLANK_CHECK,{column_name[0]} has blank value.,100,N,Y,N,N,N,N,N
+DQ_SPECIAL_CHAR_CHECK,The value in column {column_name[0]} does not match the required pattern.,101,N,N,Y,N,N,N,N
+DQ_BLACKLISTED_FLAG,{column_name[0]} has values other than these values: {capitalized_values},102,Y,N,N,N,N,N,N
+DQ_ALLOWED_VALUES_CHECK,{column_name[0]} has values other than these values: {capitalized_values},103,Y,N,N,N,N,N,N
+DQ_IS_NULL_CHECK,{column_name[0]} has NULL value.,104,N,Y,N,N,N,N,N
+DQ_CUSTOMER_MINOR_FLAG,{column_name[0]} has values other than these values: {capitalized_values},105,Y,N,N,N,N,N,N
+DQ_PINCODE_CHECK,{column_name[0]} has invalid pin code.,106,N,N,Y,N,N,N,N
+DQ_MARITAL_STATUS_CHECK,{column_name[0]} has values other than these values: {capitalized_values},107,Y,N,N,N,N,N,N
+DQ_ENTITY_CRE_FLAG,{column_name[0]} has values other than these values: {capitalized_values},108,Y,N,N,N,N,N,N
+DQ_CURRENCY_ALLOWED_VALUE,{column_name[0]} has values other than these values: {capitalized_values},109,Y,N,N,N,N,N,N
+DQ_GENDER_CHECK,{column_name[0]} has values other than these values: {capitalized_values},110,Y,N,N,N,N,N,N
+DQ_INVALID_DATE_CHECK,{column_name[0]} pattern is not in yyyy-mm-dd,111,N,N,Y,N,N,N,N
+DQ_ACCT_CLS_FLAG,{column_name[0]} has values other than these values: {capitalized_values},112,Y,N,N,N,N,N,N
+DQ_FUTURE_DATE_CHECK ,{column_name[0]} should not be future date.,113,N,N,N,N,Y,N,N
+DQ_DEPOSIT_TYPE_CHECK,{column_name[0]} has values other than these values: {capitalized_values},115,Y,N,N,N,N,N,N
+DQ_ALPHABATES_CHECK,The value in column {column_name[0]} does not match the required pattern.,116,N,N,Y,N,N,N,N
+DQ_NUM_LENGTH_CHECK,The value in column {column_name[0]} is not numeric and does not have required length.,117,N,N,Y,N,N,N,N
+DQ_ALPHANUMERIC_VALUES_CHECK,The value in column {column_name[0]} does not match the required pattern.,118,N,N,Y,N,N,N,N
+DQ_NUMERIC_VALUES_CHECK,The value in column {column_name[0]} does not match the required pattern.,119,N,N,Y,N,N,N,N
+DQ_PAN_CHECK,{column_name[0]} has invalid pan number.,120,N,N,Y,N,N,N,N
+DQ_AADHAR_CHECK,The value in column {column_name[0]} is not of 12 digit length and starting with leading zeros and one repitative number.,121,N,N,Y,N,N,N,N
+DQ_INSTRMNT_TYPE_CHECK,{column_name[0]} has values other than these values: {capitalized_values},122,Y,N,N,N,N,N,N
+DQ_IFSC_CODE_CHECK,{column_name[0]} has invalid IFSC code,123,N,N,Y,N,N,N,N
+DQ_COMPARE_DATE_CHECK,{column_name1} has lower value than {column_name2},124,N,N,N,N,Y,N,N
+DQ_MINOR_FLG_CHECK,"The difference between {column_name2} and current date should be less than 18 and {column_name1} has value as ""N""",125,N,N,N,N,Y,N,N
+DQ_NUMERIC_VALUES_RANGE_CHECK,{column_name} does not have numeric values between 0 to 100,126,N,N,N,N,Y,N,N
+DQ_NUM_MULTI_LENGTH_CHECK,The value in column {column_name} is not numeric or does not have required length.,127,N,N,N,N,Y,N,N
+DQ_NUM_LEADING_ZERO_CHECK,{column_name} does not have numeric values which leads with zero,128,N,N,Y,N,N,N,N
+DQ_MIN_NUM_LENGTH_CHECK,The value in column {column_name} is not numeric or does not have required minimum length.,129,N,N,N,N,Y,N,N
