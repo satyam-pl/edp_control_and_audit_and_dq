@@ -1,0 +1,6 @@
+CREATE TABLE edp_edproddb_srv01.edp_meta.schema_config (
+  SOURCE_OBJECT_KEY BIGINT,
+  COLUMN_INDEX STRING,
+  COLUMN_NAME STRING,
+  IS_ACTIVE STRING)
+USING sqlserver
